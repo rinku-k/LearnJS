@@ -44,8 +44,8 @@ https://javascript.info/type-conversions
 ### typeof Exceptions
 
 ```js
-typeof null == "object"; // error in the language
-typeof function () {} == "function"; // functions are treated specially
+typeof null == "object"; // true - error in the language
+typeof function () {} == "function"; // true - functions are treated special
 ```
 
 ## Operators
@@ -57,6 +57,8 @@ https://javascript.info/operators
 - The call `x = value` writes the `value` into `x` and then returns it.
 
 ```js
+let a = 1;
+let b = 2;
 let c = 3 - (a = b + 1); // 0
 ```
 
